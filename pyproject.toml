@@ -1,0 +1,39 @@
+[project]
+name = "food-delivery-time-prediction"
+version = "0.1.0"
+description = "Delivery-time (ETA) prediction with calibrated uncertainty intervals: LightGBM quantile regression + conformal prediction."
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "pandas>=2.2",
+    "numpy>=1.26",
+    "pyarrow>=16",
+    "scikit-learn>=1.5",
+    "lightgbm>=4.3",
+    "mapie>=1.0",
+    "haversine>=2.8",
+    "geopandas>=1.0",      # ships wheels (shapely + pyogrio) -> no system GDAL needed on Windows
+    "pyproj>=3.6",
+    "mlflow>=2.14",
+    "optuna>=3.6",
+    "matplotlib>=3.8",
+    "seaborn>=0.13",
+    "streamlit>=1.36",
+    "pydeck>=0.9",
+    "kagglehub>=0.3",
+    "kaggle>=1.6",
+    "tabulate>=0.9",
+    "joblib>=1.4",
+    "altair>=5",
+]
+
+[dependency-groups]
+dev = ["pytest>=8", "jupyter>=1.0", "ipykernel>=6"]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+filterwarnings = ["ignore:X does not have valid feature names"]

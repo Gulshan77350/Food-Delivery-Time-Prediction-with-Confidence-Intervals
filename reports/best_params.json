@@ -1,0 +1,14 @@
+{
+  "params": {
+    "learning_rate": 0.030899521367323966,
+    "num_leaves": 56,
+    "min_child_samples": 54,
+    "subsample": 0.9800875205097291,
+    "colsample_bytree": 0.8920634405749123,
+    "reg_lambda": 0.2627201644842164,
+    "max_cat_to_onehot": 29
+  },
+  "val_pinball_mean": 0.9073913023940513,
+  "default_val_pinball_mean": 0.9364263704769636,
+  "n_trials": 30
+}

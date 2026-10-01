@@ -1,0 +1,24 @@
+# environments
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# data (re-downloadable from Kaggle)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# experiment tracking / artifacts
+mlruns/
+mlartifacts/
+mlflow.db
+models/
+
+# secrets
+kaggle.json
+.env
+
+# tooling
+.pytest_cache/

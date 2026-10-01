@@ -1,0 +1,8 @@
+,coverage,mean_width,median_width,interval_score,miss_above_rate,p50_mae,p50_rmse,mae,rmse,worst_segment_coverage,n_segments_under,n_segments_tested,mean_z2
+1. Point baseline (L2 LightGBM),,,,,,,,3.1002,3.8487,,,,
+2. Baseline + split conformal,0.8022,9.7858,9.7858,13.2776,0.1011,3.1002,3.8487,3.1002,3.8487,0.7289,8.0,42.0,8.7176
+3. Raw quantile regression,0.7499,9.4218,8.8638,12.1342,0.1264,3.1086,3.9268,,,0.714,37.0,42.0,21.7827
+4. CQR (MAPIE),0.7992,10.0082,9.4485,12.0596,0.1053,3.1089,3.9272,,,0.7638,3.0,42.0,1.3354
+4b. CQR asymmetric (MAPIE),0.8039,10.0628,9.503,12.058,0.0961,3.109,3.9273,,,,,,
+5. Mondrian CQR (by city),0.8027,10.0363,9.4718,12.0846,0.1031,3.1088,3.927,,,0.7509,3.0,42.0,2.0214
+"5b. Mondrian CQR (by traffic, post-hoc)",0.8008,10.0126,9.4646,12.0654,0.1043,3.1089,3.9272,,,0.7508,3.0,42.0,1.4615

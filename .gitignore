@@ -11,10 +11,10 @@ data/processed/*
 !data/processed/.gitkeep
 
 # experiment tracking / artifacts
-mlruns/
-mlartifacts/
+/mlruns/
+/mlartifacts/
 mlflow.db
-models/
+/models/
 
 # secrets
 kaggle.json
